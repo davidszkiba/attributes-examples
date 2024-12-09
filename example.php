@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/src/Validation/NotEmpty.php';
 require_once __DIR__ . '/src/User.php';
+require_once __DIR__ . '/src/Validation/Email.php';
+require_once __DIR__ . '/src/Validation/MinLength.php';
+require_once __DIR__ . '/src/Validation/NotEmpty.php';
 require_once __DIR__ . '/src/Validator.php';
 
 use Demo\User;

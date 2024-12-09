@@ -16,9 +16,10 @@ class Validator {
                 $validator = $attribute->newInstance();
                 if (!$validator->validate($value)) {
                     $errors[] = sprintf(
-                        "Validation failed for property '%s' with validator '%s'",
+                        "Validation failed for property '%s' with validator '%s' and value '%s'",
                         $property->getName(),
-                        $attribute->getName()
+                        $attribute->getName(),
+                        $property->getValue($object),
                     );
                 }
             }
