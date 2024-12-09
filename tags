@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/e216bb44/
+Demo	src/User.php	/^namespace Demo;$/;"	n
+Demo	src/Validator.php	/^namespace Demo;$/;"	n
+Demo\\Validation	src/Validation/Email.php	/^namespace Demo\\Validation;$/;"	n
+Demo\\Validation	src/Validation/MinLength.php	/^namespace Demo\\Validation;$/;"	n
+Demo\\Validation	src/Validation/NotEmpty.php	/^namespace Demo\\Validation;$/;"	n
+Email	src/User.php	/^use Demo\\Validation\\Email;$/;"	a	namespace:Demo	typeref:unknown:Demo\\Validation\\Email
+Email	src/Validation/Email.php	/^class Email {$/;"	c	namespace:Demo\\Validation
+Examples	README.md	/^# Examples$/;"	c
+KlarnaPayment	src/payment/KlarnaPayment.php	/^class KlarnaPayment implements PaymentInterface {$/;"	c
+MinLength	src/User.php	/^use Demo\\Validation\\MinLength;$/;"	a	namespace:Demo	typeref:unknown:Demo\\Validation\\MinLength
+MinLength	src/Validation/MinLength.php	/^class MinLength {$/;"	c	namespace:Demo\\Validation
+NotEmpty	src/User.php	/^use Demo\\Validation\\NotEmpty;$/;"	a	namespace:Demo	typeref:unknown:Demo\\Validation\\NotEmpty
+NotEmpty	src/Validation/NotEmpty.php	/^class NotEmpty {$/;"	c	namespace:Demo\\Validation
+PayPalPayment	src/payment/PaypalPayment.php	/^class PayPalPayment implements PaymentInterface {$/;"	c
+PaymentFactory	src/payment/PaymentFactory.php	/^class PaymentFactory {$/;"	c
+PaymentInterface	src/payment/PaymentInterface.php	/^interface PaymentInterface {$/;"	i
+PaymentProcessor	src/payment/PaymentProcessor.php	/^class PaymentProcessor {$/;"	c
+StripePayment	src/payment/StripePayment.php	/^class StripePayment implements PaymentInterface {$/;"	c
+User	example.php	/^use Demo\\User;$/;"	a	typeref:unknown:Demo\\User
+User	src/User.php	/^class User {$/;"	c	namespace:Demo
+Validator	example.php	/^use Demo\\Validator;$/;"	a	typeref:unknown:Demo\\Validator
+Validator	src/Validator.php	/^class Validator {$/;"	c	namespace:Demo
+Why?	README.md	/^# Why?$/;"	c
+__construct	src/User.php	/^    public function __construct($/;"	f	class:Demo\\User
+__construct	src/Validation/MinLength.php	/^    public function __construct($/;"	f	class:Demo\\Validation\\MinLength
+__construct	src/payment/PaymentFactory.php	/^    public function __construct() {$/;"	f	class:PaymentFactory
+__construct	src/payment/PaymentProcessor.php	/^    public function __construct($/;"	f	class:PaymentProcessor
+create	src/payment/PaymentFactory.php	/^    public function create(string $type): PaymentInterface {$/;"	f	class:PaymentFactory	typeref:unknown:PaymentInterface
+errors	example.php	/^    $errors = $validator->validate($invalidUser);$/;"	v
+errors	example.php	/^    $errors = $validator->validate($validUser);$/;"	v
+factory	src/payment/example.php	/^$factory = new PaymentFactory();$/;"	v
+getAvailableProcessors	src/payment/PaymentFactory.php	/^    public function getAvailableProcessors(): array {$/;"	f	class:PaymentFactory	typeref:unknown:array
+getEmail	src/User.php	/^    public function getEmail(): string {$/;"	f	class:Demo\\User	typeref:unknown:string
+getUsername	src/User.php	/^    public function getUsername(): string {$/;"	f	class:Demo\\User	typeref:unknown:string
+invalidProcessor	src/payment/example.php	/^    $invalidProcessor = $factory->create('bitcoin');$/;"	v
+invalidUser	example.php	/^    $invalidUser = new User($/;"	v
+paypalProcessor	src/payment/example.php	/^    $paypalProcessor = $factory->create('paypal');$/;"	v
+process	src/payment/KlarnaPayment.php	/^    public function process(float $amount): bool {$/;"	f	class:KlarnaPayment	typeref:unknown:bool
+process	src/payment/PaymentInterface.php	/^    public function process(float $amount): bool;$/;"	f	interface:PaymentInterface	typeref:unknown:bool
+process	src/payment/PaypalPayment.php	/^    public function process(float $amount): bool {$/;"	f	class:PayPalPayment	typeref:unknown:bool
+process	src/payment/StripePayment.php	/^    public function process(float $amount): bool {$/;"	f	class:StripePayment	typeref:unknown:bool
+processors	src/payment/PaymentFactory.php	/^    private array $processors = [];$/;"	v	class:PaymentFactory
+stripeProcessor	src/payment/example.php	/^    $stripeProcessor = $factory->create('stripe');$/;"	v
+validUser	example.php	/^    $validUser = new User($/;"	v
+validate	src/Validation/Email.php	/^    public function validate($value): bool {$/;"	f	class:Demo\\Validation\\Email	typeref:unknown:bool
+validate	src/Validation/MinLength.php	/^    public function validate($value): bool {$/;"	f	class:Demo\\Validation\\MinLength	typeref:unknown:bool
+validate	src/Validation/NotEmpty.php	/^    public function validate($value): bool {$/;"	f	class:Demo\\Validation\\NotEmpty	typeref:unknown:bool
+validate	src/Validator.php	/^    public function validate(object $object): array {$/;"	f	class:Demo\\Validator	typeref:unknown:array
+validator	example.php	/^    $validator = new Validator();$/;"	v
