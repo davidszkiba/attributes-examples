@@ -5,6 +5,7 @@ require_once 'PaymentProcessor.php';
 require_once 'StripePayment.php';
 require_once 'PaypalPayment.php';
 require_once 'PaymentFactory.php';
+require_once 'KlarnaPayment.php';
 
 // Create factory
 $factory = new PaymentFactory();
@@ -25,6 +26,13 @@ try {
 try {
     $paypalProcessor = $factory->create('paypal');
     $paypalProcessor->process(149.99);
+} catch (\InvalidArgumentException $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+}
+
+try {
+    $factory->create('klarna')
+        ->process(11.23);
 } catch (\InvalidArgumentException $e) {
     echo "Error: " . $e->getMessage() . "\n";
 }
